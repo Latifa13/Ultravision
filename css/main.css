@@ -7,6 +7,7 @@
 
 body {
   /* Default font family and font color */
+  font-family: 'Poppins', sans-serif;
 }
 
 p, li, textarea, label, input, select {
@@ -63,3 +64,28 @@ a:hover {
 * Components
 * ----------
 */
+
+.title {
+  size: : 128px;
+  text-align: center;
+  font-weight: 900;
+  color:black;
+}
+
+.title2{
+  size: 38px;
+  text-align: center;
+  color:black;
+  font-weight: 900;
+}
+
+.sub-title {
+  text-align: center;
+  size: 40px;
+  font-weight: 900;
+}
+.mini-title {
+  size: 24px;
+  color:black;
+  font-weight: 700;
+}
