@@ -127,12 +127,16 @@ a:hover {
   text-align: center;
 
 }
+.box{
+
+  display:flex;
+}
 .boxgauche{
   text-align: justify;
-  display: flex;
-  width: 50%;
-  float: left;
   margin-right: 32px;
+  flex-basis:0;
+  flex-grow:1;
+
 }
 .sub-title{
   font-weight: bold;
@@ -149,14 +153,20 @@ border-radius:15px;
 font-weight: bold;
 color:#fcce00;
 text-decoration: none;
-float: right;
+float:right;
+
 
 }
 .boxdroite {
 
-  display: flex;
   background: linear-gradient(#fcce00,transparent)left repeat, url(bitmap.png);
-  justify-content : center; 
+  justify-content : flex-end; 
+  display:flex;
+  align-items: center;
+  flex-basis:0;
+  flex-grow:1;
+  margin-top: 32px;
+
 
   }
 
@@ -169,15 +179,35 @@ p{
 
 font-size:16px;
 }
-.boxdroite2{
-  display: flex;
-  background: linear-gradient(#fcce00, transparent) left repeat, url(bitmap2.png);
+.boxgauche2{
+  background: linear-gradient(#ff6b00, transparent) left repeat, url(bitmap2.png);
   justify-content: center;
-  width: 50%;
-  float: left;
+  display:flex;
+  align-items: center;
   margin-right: 32px;
+  flex-basis:0;
+  flex-grow:1;
 }
 
-.boxdroite2 img {
+.boxgauche2 img {
   mix-blend-mode: darken;
 }
+
+.boxdroite2{
+
+  texte-align:justify;
+  margin-right:32px;
+  flex-basis:0;
+  flex-grow: 1;
+
+
+}
+.button2{
+  align-content:right;
+  border: 2px solid #ff6b00;
+  padding: 6px;
+  border-radius:15px;
+  font-weight: bold;
+  color:#ff6b00;
+  text-decoration: none;
+  float:right;
